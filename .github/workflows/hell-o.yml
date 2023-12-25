@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Echo 1
-      run : echo 'hell-o' && echo "${{ APP_NAME }}"
+      run : echo 'hell-o' && echo ${{ APP_NAME }}
   
   job_2:
     runs-on: ubuntu-latest
