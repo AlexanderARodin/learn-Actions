@@ -1,3 +1,4 @@
 # learn-Actions
-[![Build Status](https://github.com/emilk/eframe_template/workflows/CI/badge.svg)](https://github.com/emilk/eframe_template/actions?workflow=CI)
+
+[![Make Status](https://github.com/AlexanderARodin/learn-Actions/workflows/Makefile-CI/badge.svg)](https://github.com/AlexanderARodin/learn-Actions//actions?workflow=Makefile-CI)
 
