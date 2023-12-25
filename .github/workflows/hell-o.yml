@@ -1,6 +1,10 @@
 # pseudo actions
 
 name: hell-o
+env:
+  APP_NAME: "some appName"
+  VAR1    : "value 1: ${{ github.sha }}"
+
 
 on:
   push:
@@ -12,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Echo 1
-      run : echo 'hell-o'
+      run : echo 'hell-o' && echo "${{ APP_NAME }}"
   
   job_2:
     runs-on: ubuntu-latest
@@ -25,5 +29,5 @@ jobs:
     needs: [job_A, job_2]
     steps:
     - name: Echo Fin
-      run : echo 'after all'
+      run : echo 'after all' && echo ${{ VAR1 }}
 #
