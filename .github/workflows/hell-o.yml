@@ -1,0 +1,23 @@
+# pseudo actions
+
+name: hell-o
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  job_A:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Echo 1
+      run : echo 'hell-o'
+      run : echo 'in job_A'
+  
+  job_2:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Echo 2
+      run : echo 'in job_B'
+#
