@@ -13,7 +13,6 @@ jobs:
     steps:
     - name: Echo 1
       run : echo 'hell-o'
-      run : echo 'in job_A'
   
   job_2:
     runs-on: ubuntu-latest
