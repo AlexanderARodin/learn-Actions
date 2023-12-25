@@ -19,4 +19,11 @@ jobs:
     steps:
     - name: Echo 2
       run : echo 'in job_B'
+
+  after-all:
+    runs-on: ubuntu-latest
+    needs: [job_A, job_2]
+    steps:
+    - name: Echo Fin
+      run : echo 'after all'
 #
