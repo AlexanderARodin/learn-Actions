@@ -12,6 +12,14 @@ on:
       - main
 
 jobs:
+  cloneNlist:
+    runs-on: ubuntu-latest
+    steps:
+    - name: clone
+      uses: actions/checkout@v1
+    - name: ls
+      run : ls -lAh
+  
   job_A:
     runs-on: ubuntu-latest
     steps:
