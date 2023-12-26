@@ -6,3 +6,10 @@ jobs:
     steps:
       - name: first step
         run : echo 'the very first step'
+      - name: clone Repo
+        uses: actions/checkout@v3
+      - name: pause
+        run : |
+          echo 'pause..'
+          sleep 180
+          echo '..awake'
