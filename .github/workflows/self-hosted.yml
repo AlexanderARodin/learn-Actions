@@ -11,5 +11,5 @@ jobs:
       - name: pause
         run : |
           echo 'pause..'
-          sleep 180
+          sleep 10
           echo '..awake'
