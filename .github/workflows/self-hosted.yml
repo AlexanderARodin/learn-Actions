@@ -1,0 +1,10 @@
+name: self-hosted
+on:
+  push:
+    branches: self-hosted
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - name: first step
+        run : echo 'the very first step'
