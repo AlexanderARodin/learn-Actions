@@ -1,7 +1,5 @@
 name: self-hosted
-on:
-  push:
-    branches: self-hosted
+on: [workflow_dispatch]
 jobs:
   test:
     runs-on: self-hosted
