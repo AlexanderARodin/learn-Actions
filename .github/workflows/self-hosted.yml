@@ -1,5 +1,6 @@
 name: self-hosted
 on: [workflow_dispatch]
+
 jobs:
   test:
     runs-on: ubuntu_latest # self-hosted
@@ -11,5 +12,5 @@ jobs:
       - name: pause
         run : |
           echo 'pause..'
-          sleep 10
+          sleep 1
           echo '..awake'
