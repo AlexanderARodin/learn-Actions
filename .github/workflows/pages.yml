@@ -5,7 +5,8 @@ on:
       - main
     paths-ignore:
       - '.github/workflows/**'
-
+permissions:
+  contents: write
 
 jobs:
   make-pages:
