@@ -18,7 +18,7 @@ jobs:
       run : |
         echo '-------------> 1'
         ls -lAh
-        cat ./.github.workflows/pages.yml
+        cat ./.github/workflows/pages.yml
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
       with:
