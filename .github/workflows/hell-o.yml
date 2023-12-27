@@ -5,13 +5,13 @@ env:
   APP_NAME: "some appName"
   VAR1    : "value 1: ${{ github.sha }}"
 
-
 on:
   push:
     branches: 
       - main
     paths-ignore:
-      - '.github/workflow/**'
+      - '.github/workflows/**'
+
 
 jobs:
   cloneNlist:
