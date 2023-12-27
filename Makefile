@@ -19,4 +19,4 @@ git.addall:
 
 clean:
 	@echo 'nothing to clean (yet)'
-	@exit 1
+	# @exit 1
